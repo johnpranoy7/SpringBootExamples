@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://www.springframework.org/schema/beans"
+    xmlns:mvc="http://www.springframework.org/schema/mvc"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+    http://www.springframework.org/schema/context 
+    http://www.springframework.org/schema/context/spring-context-2.5.xsd" >
+
+    <context:annotation-config />
+    <context:component-scan base-package="com.cg.mvc.practise.SpringDependency" />
+<bean class="com.cg.mvc.practise.SpringDependency.Tyre" id="tyre">
+<!-- 	<property name="brand" value="MRF"></property> -->
+<constructor-arg value="1" type="int"></constructor-arg>
+<constructor-arg value="MRF" type="java.lang.String"></constructor-arg>
+
+
+</bean>
+</beans>
